@@ -26,13 +26,13 @@ app.use(express.json());
 
 app.get("/about", (req, res) => {
 
-    let extname = path.extname(filepath);
-    let contentType = "text/html";
+    // let extname = path.extname(filepath);
+    // let contentType = "text/html";
 
-    switch (extname){
-        case '.css':
-        break;
-    }
+    // switch (extname){
+    //     case '.css':
+    //     break;
+    // }
     fs.readFile("./JSON/quote.json", "utf8", (err, content) => {
         if (err) throw err;
 
